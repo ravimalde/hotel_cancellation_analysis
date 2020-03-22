@@ -16,7 +16,7 @@ Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August
 
 ## Our Solution
 
-Our primary goal was to be able to accurately identify a customer that had a high likelihood of cancelling at the point of purchase. We ran a total of 15 different models, the final model chosen was a Random Forest Classifier as it was one of the best performers and was relatively low in complexity compared the the best performer (stacking classifier). The graph below shows the relative importance of the top 20 most important features in the dataset.
+Our primary goal was to be able to accurately identify a customer that had a high likelihood of cancelling at the point of purchase. We ran a total of 15 different models, the final model chosen was a Random Forest Classifier as it was one of the best performers and was relatively low in complexity compared the the best performer (stacking classifier). The graph below shows the relative importance of the top 20 most important features in the dataset for the Random Forest Classifier.
 
 ![Feature Importances](https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/feature_importance.png)
 
@@ -26,5 +26,9 @@ Our primary goal was to be able to accurately identify a customer that had a hig
 4. ADR: the Average Daily Rate. This could be considered a proxy for whether or not the hotel is in a busy period at the check-in date.
 5. PreviousCancellations: the number of times the customer has cancelled previous bookings.
 
-It was able to correctly identify 99.6% of individuals that do cancel and 99.7% of individuals that do not cancel (on our test dataset). With the accuracy of this model there are many feasible ways of curbing the revenue loss from cancellations.
+The model was able to correctly identify 99.6% of individuals that do cancel and 99.7% of individuals that do not cancel (on our test dataset). With the accuracy of this model there are many feasible ways of curbing the revenue loss from cancellations. Our recommendations to the client are theat they increase the base level of deposit from 25% to 50% for individuals that are classified as people that are going to cancel. From our calculations we estimate that this will increase their revenue by 20,000€ per 1000 bookings, equating to 790,000€ per year.
+
+# File Description
+
+
 
