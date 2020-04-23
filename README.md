@@ -96,6 +96,10 @@ The data set had 12 numerical and 12 categorical features. The categorical featu
 
 Seven different model types were created and their hyperparameters were tuned using GridSearchCV. the metric by which the models were compared was their validation AUC ROC (the table below gives all of the model performances sorted by this metric). The final model chosen was the 4th iteration of random forest classifier as it was one of the best performers and was relatively low in complexity compared the the best performer (stacking classifier). As can be seen from the table, there were some reproducibility issues with the random forest classifier as the first iteration was actually the best performer despite the grid search narrowing down the parameters to the optimum range. This is currently thought to be due to floating point rounding errors or a multiprocessing issue. The differences in performance are very small and considered negligible. 
 
+<h5 align="center">Model Performances</h5>
+<p align="center">
+  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/moedl_performances.png" width=650>
+</p>
 
 The graph below shows the relative importance of the top 20 most important features in the dataset for the Random Forest Classifier.
 
