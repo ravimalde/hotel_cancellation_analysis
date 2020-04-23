@@ -1,6 +1,6 @@
 # Hotel Cancellation Analysis
 
-The aim of this project was to mitigate the loss of revenue to a hotel due to the cancellation of bookings. The dataset used contained customer booking information for 80,000 bookings over a two year period, from which we were trying to predict the likelihood of that booking being cancelled prior to the check-in date. From our analysis and recommendations we estimate that the hotel could expect an increase of 790,000€ in revenue per year. This project was a collaborative effort between Ravi Malde and Seung Won Lee.
+The aim of this project was to mitigate a hotel's loss of revenue due to the cancellation of bookings. The dataset used contained customer booking information for 80,000 bookings over a two year period, from which we were trying to predict the likelihood of that booking being cancelled prior to the check-in date. From our analysis and recommendations we estimate that the hotel could expect an increase of 790,000€ in revenue per year. This project was a collaborative effort between Ravi Malde and Seung Won Lee.
 
 Ravi Malde's Contact Info:
 - Email: ravidmalde@gmail.com
