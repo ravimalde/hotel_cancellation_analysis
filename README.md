@@ -61,8 +61,7 @@ We take ethics very seriously so for obvious reasons race, religion, gender and 
 
 ## Data Cleaning
 
-Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August 2017. Of these, 33,076 were cancelled prior to check-in. As one can imagine this causes a huge loss of revenue for our client as not all of the cancellations can be replaced with new customers in time for the check-in date.
-
+Fortunately, the dataset was already in good shape, presumably because it was created obtained knowing that it would be used in an official study as seen on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191). There were still however still 28 null values present in the dataset. Due to the relative size of the total dataset and the nulls, these were omitted from the analysis. After this, columns that were not going to be used in the analysis were removed also. For example, 'BookingChanges' was removed because the purpose of the model is to identify individuals that are likely to cancel at the point of purchase, therefore at that time it is unknown how many booking changes they will make prior to check-in.
 
 ## Our Solution
 
@@ -70,7 +69,7 @@ Our primary goal was to be able to accurately identify a customer that had a hig
 
 <h5 align="center">Feature Importances</h5>
 <p align="center">
-  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/feature_importance.png" width=750>
+  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/feature_importance.png" width=850>
 </p>
 
 1. LeadTime: the time between the booking being made and the check-in date.
