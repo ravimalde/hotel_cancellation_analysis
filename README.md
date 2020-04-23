@@ -17,6 +17,11 @@ Seung Won Lee Contact Info:
 2. [ Methods Used ](#methods_used)
 3. [ Technologies Used ](#technologies_used)
 4. [ Executive Summary ](#executive_summary)
+  * [ Preprocessing ](#preprocessing)
+  * [ Modelling ](#modelling)
+  * [ Our Recommendations and Threshold Selection ](#recommendations)
+  * [ Ethics ](#ethics)
+  
 
 <a name="file_description"></a>
 ## File Descriptions
@@ -59,6 +64,7 @@ Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August
 
 We take ethics very seriously so for obvious reasons race, religion, gender and biological sex have not been considered in the model. This is not to say that the model isn't indirectly discriminating against certain groups via the other features, therefore this is something that will require close monitoring after its implementation. More will be covered on the topic of ethics towards the end of this document.
 
+<a name="preprocessing"></a>
 ### Preprocessing
 
 Fortunately, the dataset was already in good shape, presumably because it was created knowing that it would be used in an official study as seen on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191). However there were still 28 null values present. Due to the relative size of the total dataset and the nulls, these were omitted from the analysis. After this, columns that were not going to be used were also removed. For example, 'BookingChanges' was removed because the purpose of the model is to identify individuals that are likely to cancel at the point of purchase, therefore at that time it is unknown how many booking changes they will make prior to check-in.
@@ -92,6 +98,7 @@ The features contained in the dataset at this point were as follows (the definit
 
 The data set had 12 numerical and 12 categorical features. The categorical features were then one hot encoded, reusulting in a dataframe with 524 columns. After this, the dataset was then split into a training set (44,607 instances), a validation set (14,869 instances) and a test set (19,826). A StandardScaler object was then fit to the numerical features in the training dataset and used to tranform the instances in that same set. The same scaling object was then used to transform the numerical features in the validation and test datasets.
 
+<a name="modelling"></a>
 ### Modelling
 
 Seven different model types were created and their hyperparameters were tuned using GridSearchCV. the metric by which the models were compared was their validation AUC ROC (the table below gives all of the model performances sorted by this metric). The final model chosen was the 4th iteration of random forest classifier as it was one of the best performers and was relatively low in complexity compared the the best performer (stacking classifier). As can be seen from the table, there were some reproducibility issues with the random forest classifier as the first iteration was actually the best performer despite the grid search narrowing down the parameters to the optimum range. This is currently thought to be due to floating point rounding errors or a multiprocessing issue. The differences in performance are very small and considered negligible. 
@@ -121,6 +128,7 @@ Plots were then created for each of the 5  most important features showing the c
   <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/leadtime_relationship.png" width=850>
 </p>
 
+<a name="recommendations"></a>
 ### Our Recommendations and Threshold Selection
 
 The average booking price was calculated using the ADR (Average Daily Rate) and the length of stay for each booking; this equated to 320€. Our recommendations were to increase the cost of deposit from 25% to 50% (an increase in 80€) for individuals who's bookings are classified as high risk cancellations. It was assumed that 10% of customers faced with the higher deposit rate would not follow through with the purchase (equating to an average of 32€ per customer). Therefore the costs associated to implementing our model were as follows:
@@ -138,3 +146,10 @@ The fm score was then calculated for each of the thresholds in the model. The th
 </p>
 
 The model was able to correctly identify 99.6% of individuals that do cancel and 99.7% of individuals that do not cancel. **Using the costs associated with the model we estimate that this will increase revenue by 20,000€ per 1000 bookings, equating to 790,000€ per year**.
+
+<a name="ethics"></a>
+### Ethics
+
+As previously stated, we take ethics very seriously and race, religion, gender and biological sex have not been considered in the model. Unfortunately, we cannot be certain at this point that the model is not indirectly discriminating against demographics via the other features in the model. Once the model is deployed, we must monitor its behaviour in the real world to see if this is actually happening. One way in which we can do this is to present customers with a questionnaire at the point of purchase, from which we will gather personal information to see which demographic they represent. If it's clear that certain demographics are being discriminated against then further investigation will be done to determine how we can prevent this.
+
+
