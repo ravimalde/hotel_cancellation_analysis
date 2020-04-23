@@ -57,7 +57,7 @@ Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August
   <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/cancellation_count.png" width=750>
 </p>
 
-We take ethics very seriously so for obvious reasons race, religion, gender and biological sex have not been considered. All customers pay the same overall price (if they are purchasing the same product), it is only the initial deposit (as a % of the total price) that will change on a customer to customer basis. More will be covered on the topic of ethics towards the end of this document.
+We take ethics very seriously so for obvious reasons race, religion, gender and biological sex have not been considered in the model. This is not to say that the model isn't indirectly discriminating against certain groups via the other features, therefore this is something that will require close monitoring after its implementation. More will be covered on the topic of ethics towards the end of this document.
 
 ## The Problem
 
