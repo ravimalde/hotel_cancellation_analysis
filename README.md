@@ -120,7 +120,7 @@ Some interesting insights from the model were the relative importances of the fe
 4. ADR: the Average Daily Rate. This could be considered a proxy for whether or not the hotel is in a busy period at the check-in date.
 5. PreviousCancellations: the number of times the customer has cancelled previous bookings.
 
-Plots were then created for each of the 5  most important features showing the cancellation rates for each one. The plot for the most important feature, LeadTime is shown below. Its clear that as the time between the booking and the check-in date increases, the cancellation rate gets significantly greater. Bookings made approximately 1-2 years prior to the check-in date cancel over 70% of the time!
+Plots were then created for each of the 5  most important features showing the cancellation rates for each one. The plot for the most important feature, Lead Time, is shown below. Its clear that as the time between the booking and the check-in date increases, the cancellation rate gets significantly greater. Bookings made approximately 1-2 years prior to the check-in date cancel over 70% of the time!
 
 <h5 align="center">Lead Time Cancellation Rates</h5>
 <p align="center">
