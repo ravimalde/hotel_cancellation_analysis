@@ -2,12 +2,12 @@
 
 The aim of this project was to mitigate the loss of revenue to a hotel due to the cancellation of bookings. The dataset used contained customer booking information for 80,000 bookings over a two year period, from which we were trying to predict the likelihood of that booking being cancelled prior to the check-in date. This project was a collaborative effort between Ravi Malde and Seung Won Lee.
 
-Ravi Malde Contact Info:
+Ravi Malde's Contact Info:
 - Email: ravidmalde@gmail.com
 - LinkedIn: www.linkedin.com/in/ravi-malde
 - Medium: www.medium.com/@ravimalde
 
-Seung Won Lee Contact Info:
+Seung Won Lee's Contact Info:
 - Email: jesuslsw21@gmail.com
 - LinkedIn: www.linkedin.com/in/james-seungwon-lee-a681b855
 
