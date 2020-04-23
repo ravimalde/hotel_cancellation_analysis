@@ -121,4 +121,20 @@ Plots were then created for each of the 5  most important features showing the c
   <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/leadtime_relationship.png" width=850>
 </p>
 
+### Our Recommendations and Threshold Selection
+
+The average booking price was calculated using the ADR (Average Daily Rate) and the length of stay for each booking; this equated to 320€. Our recommendations were to increase the cost of deposit from 25% to 50% (an increase in 80€) for individuals who's bookings are classified as high risk cancellations. It was assumed that 10% of customers faced with the higher deposit rate would not follow through with the purchase (equating to an average of 32€ per customer). Therefore the costs associated to implementing our model were as follows:
+
+- Cost of True Positive = 48€ (80€ - 32€)
+- Cost of False Positive = -32€
+- Cost of True Negative = 0€ (business as usual)
+- Cost of False Negative 0€ (business as usual)
+
+The fm score was then calculated for each of the thresholds in the model. The threshold with the highest fm score was 0.448167; this is the optimum threshold that results in the maximum returns based on the costs outlined above. With this threshold, the model was then tested on the test data set. This gave us the following confusion matrix:
+
+<h5 align="center">Confusion Matrix</h5>
+<p align="center">
+  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/confusion_matrix.png" width=550>
+</p>
+
 The model was able to correctly identify 99.6% of individuals that do cancel and 99.7% of individuals that do not cancel (on our test dataset). With the accuracy of this model there are many feasible ways of curbing the revenue loss from cancellations. Our recommendations to the client are theat they increase the base level of deposit from 25% to 50% for individuals that are classified as people that are going to cancel. From our calculations we estimate that this will increase their revenue by 20,000€ per 1000 bookings, equating to 790,000€ per year.
