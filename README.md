@@ -38,7 +38,7 @@ Seung Won Lee's Contact Info:
 - Data exploration
 - Data visualisation
 - Data cleaning
-- Feature engineering
+- Data transformation
 - Machine learning
 
 <a name="technologies_used"></a>
