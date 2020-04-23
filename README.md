@@ -59,7 +59,7 @@ Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August
 
 We take ethics very seriously so for obvious reasons race, religion, gender and biological sex have not been considered in the model. This is not to say that the model isn't indirectly discriminating against certain groups via the other features, therefore this is something that will require close monitoring after its implementation. More will be covered on the topic of ethics towards the end of this document.
 
-## The Problem
+## Data Cleaning
 
 Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August 2017. Of these, 33,076 were cancelled prior to check-in. As one can imagine this causes a huge loss of revenue for our client as not all of the cancellations can be replaced with new customers in time for the check-in date.
 
@@ -68,7 +68,10 @@ Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August
 
 Our primary goal was to be able to accurately identify a customer that had a high likelihood of cancelling at the point of purchase. We ran a total of 15 different models, the final model chosen was a Random Forest Classifier as it was one of the best performers and was relatively low in complexity compared the the best performer (stacking classifier). The graph below shows the relative importance of the top 20 most important features in the dataset for the Random Forest Classifier.
 
-![Feature Importances](https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/feature_importance.png)
+<h5 align="center">Feature Importances</h5>
+<p align="center">
+  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/feature_importance.png" width=750>
+</p>
 
 1. LeadTime: the time between the booking being made and the check-in date.
 2. Country_PRT: if the booking was made from Portugal. The identity of the hotel was kept anonymous in the dataset, however Portugal had the highest number of bookings, so it is assued that the hotel is based somewhere within the country.
