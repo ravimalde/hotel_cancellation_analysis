@@ -59,11 +59,40 @@ Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August
 
 We take ethics very seriously so for obvious reasons race, religion, gender and biological sex have not been considered in the model. This is not to say that the model isn't indirectly discriminating against certain groups via the other features, therefore this is something that will require close monitoring after its implementation. More will be covered on the topic of ethics towards the end of this document.
 
-### Data Cleaning
+### Preprocessing
 
-Fortunately, the dataset was already in good shape, presumably because it was created knowing that it would be used in an official study as seen on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191). There were still however still 28 null values present. Due to the relative size of the total dataset and the nulls, these were omitted from the analysis. After this, columns that were not going to be used were also removed. For example, 'BookingChanges' was removed because the purpose of the model is to identify individuals that are likely to cancel at the point of purchase, therefore at that time it is unknown how many booking changes they will make prior to check-in.
+Fortunately, the dataset was already in good shape, presumably because it was created knowing that it would be used in an official study as seen on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191). However there were still 28 null values present. Due to the relative size of the total dataset and the nulls, these were omitted from the analysis. After this, columns that were not going to be used were also removed. For example, 'BookingChanges' was removed because the purpose of the model is to identify individuals that are likely to cancel at the point of purchase, therefore at that time it is unknown how many booking changes they will make prior to check-in.
 
-## Our Solution
+The features contained in the dataset at this point were as follows (the definitions of these can be found in the Column_Description_1.png and Column_Description_2.png files):
+
+- LeadTime
+- ArrivalDateMonth
+- ArrivalDateWeekNumber
+- ArrivalDateDayOfmonth
+- StaysInWeekendNights
+- StaysInWeekNights
+- Adults
+- Children
+- Babies
+- Meal
+- Country
+- MarketSegment
+- DistributionChannel
+- IsRepeatedGuest
+- PreviousCancellations
+- PreviousBookingsNotCanceled
+- ReservedRoomTpye
+- AssignedRoomType
+- Agent
+- DaysInWaitingList
+- CustomerType
+- ADR
+- RequiredCarParkingSpaces
+- TotalOfSpecialRequests
+
+The data set had 12 numerical and 13 categorical features. The categorical features were then one hot encoded, reusulting in a dataframe with 524 columns. After this, the dataset was then split into a training set (44,607 instances), a validation set (14,869 instances) and a test set (19,826). A StandardScaler object was then fit to the numerical features in the training dataset and used to tranform the instances in that same set. The same scaling object was then used to transform the numerical features in the validation and test datasets.
+
+### Modelling
 
 Our primary goal was to be able to accurately identify a customer that had a high likelihood of cancelling at the point of purchase. We ran a total of 15 different models, the final model chosen was a Random Forest Classifier as it was one of the best performers and was relatively low in complexity compared the the best performer (stacking classifier). The graph below shows the relative importance of the top 20 most important features in the dataset for the Random Forest Classifier.
 
