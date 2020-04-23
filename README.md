@@ -1,6 +1,15 @@
 # Hotel Cancellation Analysis
 
+The aim of this project was 
 This project was a collaborative effort between Ravi Malde and Seung Won Lee.
+
+Ravi Malde Contact Info:
+- Email: ravidmalde@gmail.com
+- LinkedIn: www.linkedin.com/in/ravi-malde
+- Medium: www.medium.com/@ravimalde
+
+Seung Won Lee Contact Info:
+- Email: jesuslsw21@gmail.com
 
 # File Descriptions
 
