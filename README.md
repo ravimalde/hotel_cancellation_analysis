@@ -90,11 +90,14 @@ The features contained in the dataset at this point were as follows (the definit
 - RequiredCarParkingSpaces
 - TotalOfSpecialRequests
 
-The data set had 12 numerical and 13 categorical features. The categorical features were then one hot encoded, reusulting in a dataframe with 524 columns. After this, the dataset was then split into a training set (44,607 instances), a validation set (14,869 instances) and a test set (19,826). A StandardScaler object was then fit to the numerical features in the training dataset and used to tranform the instances in that same set. The same scaling object was then used to transform the numerical features in the validation and test datasets.
+The data set had 12 numerical and 12 categorical features. The categorical features were then one hot encoded, reusulting in a dataframe with 524 columns. After this, the dataset was then split into a training set (44,607 instances), a validation set (14,869 instances) and a test set (19,826). A StandardScaler object was then fit to the numerical features in the training dataset and used to tranform the instances in that same set. The same scaling object was then used to transform the numerical features in the validation and test datasets.
 
 ### Modelling
 
-Our primary goal was to be able to accurately identify a customer that had a high likelihood of cancelling at the point of purchase. We ran a total of 15 different models, the final model chosen was a Random Forest Classifier as it was one of the best performers and was relatively low in complexity compared the the best performer (stacking classifier). The graph below shows the relative importance of the top 20 most important features in the dataset for the Random Forest Classifier.
+Seven different model types were created and their hyperparameters were tuned using GridSearchCV. the metric by which the models were compared was their validation AUC ROC (the table below gives all of the model performances sorted by this metric). The final model chosen was the 4th iteration of random forest classifier as it was one of the best performers and was relatively low in complexity compared the the best performer (stacking classifier). As can be seen from the table, there were some reproducibility issues with the random forest classifier as the first iteration was actually the best performer despite the grid search narrowing down the parameters to the optimum range. This is currently thought to be due to floating point rounding errors or a multiprocessing issue. The differences in performance are very small and considered negligible. 
+
+
+The graph below shows the relative importance of the top 20 most important features in the dataset for the Random Forest Classifier.
 
 <h5 align="center">Feature Importances</h5>
 <p align="center">
