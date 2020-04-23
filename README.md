@@ -59,9 +59,9 @@ Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August
 
 We take ethics very seriously so for obvious reasons race, religion, gender and biological sex have not been considered in the model. This is not to say that the model isn't indirectly discriminating against certain groups via the other features, therefore this is something that will require close monitoring after its implementation. More will be covered on the topic of ethics towards the end of this document.
 
-## Data Cleaning
+### Data Cleaning
 
-Fortunately, the dataset was already in good shape, presumably because it was created obtained knowing that it would be used in an official study as seen on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191). There were still however still 28 null values present in the dataset. Due to the relative size of the total dataset and the nulls, these were omitted from the analysis. After this, columns that were not going to be used in the analysis were removed also. For example, 'BookingChanges' was removed because the purpose of the model is to identify individuals that are likely to cancel at the point of purchase, therefore at that time it is unknown how many booking changes they will make prior to check-in.
+Fortunately, the dataset was already in good shape, presumably because it was created knowing that it would be used in an official study as seen on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191). There were still however still 28 null values present. Due to the relative size of the total dataset and the nulls, these were omitted from the analysis. After this, columns that were not going to be used were also removed. For example, 'BookingChanges' was removed because the purpose of the model is to identify individuals that are likely to cancel at the point of purchase, therefore at that time it is unknown how many booking changes they will make prior to check-in.
 
 ## Our Solution
 
