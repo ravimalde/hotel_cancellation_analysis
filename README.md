@@ -137,4 +137,4 @@ The fm score was then calculated for each of the thresholds in the model. The th
   <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/confusion_matrix.png" width=550>
 </p>
 
-The model was able to correctly identify 99.6% of individuals that do cancel and 99.7% of individuals that do not cancel. Using the costs associated with the model we estimate that this will increase revenue by 20,000€ per 1000 bookings, equating to 790,000€ per year.
+The model was able to correctly identify 99.6% of individuals that do cancel and 99.7% of individuals that do not cancel. **Using the costs associated with the model we estimate that this will increase revenue by 20,000€ per 1000 bookings, equating to 790,000€ per year**.
