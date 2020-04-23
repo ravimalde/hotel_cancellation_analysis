@@ -101,7 +101,7 @@ Seven different model types were created and their hyperparameters were tuned us
   <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/moedl_performances.png" width=450>
 </p>
 
-The graph below shows the relative importance of the top 20 most important features in the dataset for the Random Forest Classifier.
+Some interesting insights from the model were the relative importances of the features. These indicate how important a given feature is in determining whether or not a booking is going to be cancelled. The graph below shows the relative importance of the top 20 most important features in the dataset.
 
 <h5 align="center">Feature Importances</h5>
 <p align="center">
