@@ -114,4 +114,11 @@ Some interesting insights from the model were the relative importances of the fe
 4. ADR: the Average Daily Rate. This could be considered a proxy for whether or not the hotel is in a busy period at the check-in date.
 5. PreviousCancellations: the number of times the customer has cancelled previous bookings.
 
+Plots were then created for each of the 5  most important features showing the cancellation rates for each one. The plot for the most important feature, LeadTime is shown below. Its clear that as the time between the booking and the check-in date increases, the cancellation rate gets significantly greater. Bookings made approximately 1-2 years prior to the check-in date cancel over 70% of the time!
+
+<h5 align="center">Lead Time Cancellation Rates</h5>
+<p align="center">
+  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/leadtime_relationship.png" width=850>
+</p>
+
 The model was able to correctly identify 99.6% of individuals that do cancel and 99.7% of individuals that do not cancel (on our test dataset). With the accuracy of this model there are many feasible ways of curbing the revenue loss from cancellations. Our recommendations to the client are theat they increase the base level of deposit from 25% to 50% for individuals that are classified as people that are going to cancel. From our calculations we estimate that this will increase their revenue by 20,000€ per 1000 bookings, equating to 790,000€ per year.
