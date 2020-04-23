@@ -10,6 +10,7 @@ Ravi Malde Contact Info:
 
 Seung Won Lee Contact Info:
 - Email: jesuslsw21@gmail.com
+- LinkedIn: www.linkedin.com/in/james-seungwon-lee-a681b855/
 
 # File Descriptions
 
