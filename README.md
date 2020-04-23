@@ -16,6 +16,7 @@ Seung Won Lee Contact Info:
 1. [ File Descriptions ](#file_description)
 2. [ Methods Used ](#methods_used)
 3. [ Technologies Used ](#technologies_used)
+4. [ Executive Summary ](#executive_summary)
 
 <a name="file_description"></a>
 ## File Descriptions
@@ -46,7 +47,8 @@ Seung Won Lee Contact Info:
 - Seaborn
 - Scikit-learn
 
-# Executive Summary
+<a name="executive_summary"></a>
+## Executive Summary
 
 A large hotel chain has approached us to investigate viable methods of mitigating the impact of short-notice customer cancellations. The aim of this analysis was to identify which characteristics of customers indicate that they are of a high probability to cancel, and to provide actionable insights on how to mitigate any revenue loss due to cancellations.
 
@@ -56,7 +58,10 @@ We take ethics very seriously so for obvious reasons race, religion, gender and 
 
 Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August 2017. Of these, 33,076 were cancelled prior to check-in. As one can imagine this causes a huge loss of revenue for our client as not all of the cancellations can be replaced with new customers in time for the check-in date.
 
-![Hotel Reservation Count](https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/cancellation_count.png)
+<h5 align="center">Hotel Reservation Count</h5>
+<p align="center">
+  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/cancellation_count.png" width=650>
+</p>
 
 ## Our Solution
 
