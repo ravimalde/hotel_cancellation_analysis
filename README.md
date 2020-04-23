@@ -1,7 +1,6 @@
 # Hotel Cancellation Analysis
 
-The aim of this project was 
-This project was a collaborative effort between Ravi Malde and Seung Won Lee.
+The aim of this project was to mitigate the loss of revenue to a hotel due to the cancellation of bookings. The dataset used contained customer booking information for 80,000 bookings over a two year period, from which we were trying to predict the likelihood of that booking being cancelled prior to the check-in date. This project was a collaborative effort between Ravi Malde and Seung Won Lee.
 
 Ravi Malde Contact Info:
 - Email: ravidmalde@gmail.com
@@ -10,16 +9,42 @@ Ravi Malde Contact Info:
 
 Seung Won Lee Contact Info:
 - Email: jesuslsw21@gmail.com
-- LinkedIn: www.linkedin.com/in/james-seungwon-lee-a681b855/
+- LinkedIn: www.linkedin.com/in/james-seungwon-lee-a681b855
 
-# File Descriptions
+## Table of Contents
 
+1. [ File Descriptions ](#file_description)
+2. [ Methods Used ](#methods_used)
+3. [ Technologies Used ](#technologies_used)
+
+<a name="file_description"></a>
+## File Descriptions
+
+- index.ipynb: notebook conatining all of the code.
+- H2.csv: the dataset obtained from [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191).
 - images: contains images used in the readme file.
-- superseded: contains old notebooks.
+- superseded: contains superseded notebooks.
 - Column_Description_1.png: Outlines the definitions of dataset features.
 - Column_Description_2.png: Outlines the definitions of dataset features.
-- H2.csv: the dataset.
-- index.ipynb: notebook conatining all of the code.
+
+<a name="methods_used"></a>
+## Methods Used
+
+- Data exploration
+- Data visualisation
+- Data cleaning
+- Feature engineering
+- Machine learning
+
+<a name="technologies_used"></a>
+## Technologies
+
+- Python
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
 # Executive Summary
 
