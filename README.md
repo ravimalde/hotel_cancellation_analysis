@@ -60,7 +60,7 @@ Our dataset contained 79,330 bookings made between 1st July 2015 and 31st August
 
 <h5 align="center">Hotel Reservation Count</h5>
 <p align="center">
-  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/cancellation_count.png" width=650>
+  <img src="https://github.com/ravimalde/hotel_cancellation_analysis/blob/master/images/cancellation_count.png" width=750>
 </p>
 
 ## Our Solution
