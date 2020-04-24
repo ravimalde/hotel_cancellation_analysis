@@ -66,7 +66,7 @@ We take ethics very seriously so for obvious reasons race, religion, gender and 
 <a name="preprocessing"></a>
 ### Preprocessing
 
-Fortunately, the dataset was already in good shape, presumably because it was created knowing that it would be used in an official study as seen on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191). However there were still 28 null values present. Due to the relative size of the total dataset and the nulls, these were omitted from the analysis. After this, columns that were not going to be used were also removed. For example, 'BookingChanges' was removed because the purpose of the model is to identify individuals that are likely to cancel at the point of purchase, therefore at that time it is unknown how many booking changes they will make prior to check-in.
+Fortunately, the dataset was already in good shape, presumably because it was created knowing that it would be used in an official study as seen on [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340918315191). However there were still 28 null values present. Due to the relative size of the total dataset and the nulls, these were omitted from the analysis. After this, columns that were not going to be used were also removed. For example, 'BookingChanges' was removed because the purpose of the model is to identify individuals at the point of purchase who are likely to cancel, therefore at that time it is unknown how many booking changes they will make prior to check-in.
 
 The features contained in the dataset at this point were as follows (the definitions of these can be found in the Column_Description_1.png and Column_Description_2.png files):
 
