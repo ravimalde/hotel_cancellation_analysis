@@ -130,7 +130,7 @@ Plots were then created for each of the 5  most important features showing the c
 <a name="recommendations"></a>
 ### Our Recommendations and Threshold Selection
 
-The average booking price was calculated using the ADR (Average Daily Rate) and the length of stay for each booking; this equated to 320€. Our recommendations were to increase the cost of deposit from 25% to 50% (an increase in 80€) for individuals who's bookings are classified as high risk cancellations. It was assumed that 10% of customers faced with the higher deposit rate would not follow through with the purchase (equating to an average of 32€ per customer). Therefore the costs associated to implementing our model were as follows:
+The average booking price was calculated using the ADR (Average Daily Rate) and the length of stay for each booking; this equated to 320€. Our recommendations were to increase the cost of deposit from 25% to 50% (an increase in 80€) for individuals who's bookings are classified as high risk cancellations. It was assumed that 10% of customers faced with the higher deposit rate would not follow through with the purchase (equating to an average of 32€ per customer). Therefore the costs associated with implementing our recommendations were as follows:
 
 - Cost of True Positive = 48€ (80€ - 32€)
 - Cost of False Positive = -32€
